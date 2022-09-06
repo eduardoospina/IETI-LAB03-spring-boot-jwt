@@ -7,6 +7,7 @@ public class UserDto {
     private String name;
     private String email;
     private String lastName;
+    private String password;
     private String createdAt;
 
     public UserDto(){
@@ -68,5 +69,13 @@ public class UserDto {
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

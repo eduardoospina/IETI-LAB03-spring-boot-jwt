@@ -1,10 +1,12 @@
 package IETI.Lab1User.entities;
 
+import IETI.Lab1User.entities.enums.RoleEnum;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Document
 public class User{
@@ -15,6 +17,8 @@ public class User{
     String email;
     String lastName;
     String createdAt;
+    private String passwordHash;
+    private List<RoleEnum> roles;
 
     public User(){
         this.id = String.valueOf((int)(Math.random()*5));
@@ -74,5 +78,21 @@ public class User{
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public String getPassword() {
+        return passwordHash;
+    }
+
+    public void setPassword(String password) {
+        this.passwordHash = password;
+    }
+
+    public List<RoleEnum> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<RoleEnum> roles) {
+        this.roles = roles;
     }
 }
