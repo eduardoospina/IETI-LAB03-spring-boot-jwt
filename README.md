@@ -87,11 +87,15 @@ para esto se siguen los siguientes pasos:
 ![](https://i.postimg.cc/FK3Lxd8C/secure-start.png)
 
 ##### tests
-![](https://i.postimg.cc/6qRgWhmL/getforbiden-jwt.png)
+![](https://i.postimg.cc/44V4fYSw/getforbiden-jwt.png)
 
-![](https://i.postimg.cc/02RhtLzt/getforbiden-jwt-2.png)
+![](https://i.postimg.cc/PrMtDBhw/getforbiden-jwt-2.png)
 
-![](https://i.postimg.cc/DyrHRBs7/postforbiden-jwt.png)
+![](https://i.postimg.cc/pdmxgrjf/getforbiden-jwt-3.png)
+
+![](https://i.postimg.cc/7LjDD41p/getforbiden-jwt-4.png)
+
+![](https://i.postimg.cc/B6D3nzMt/getforbiden-jwt-5.png)
 
 
 
