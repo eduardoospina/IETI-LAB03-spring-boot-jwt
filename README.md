@@ -83,7 +83,15 @@ para esto se siguen los siguientes pasos:
         - Open Endpoint: User's List
         - Secured Endpoint: User by Id
 
+##### Start:
+![](https://i.postimg.cc/FK3Lxd8C/secure-start.png)
 
+##### tests
+![](https://i.postimg.cc/6qRgWhmL/getforbiden-jwt.png)
+
+![](https://i.postimg.cc/02RhtLzt/getforbiden-jwt-2.png)
+
+![](https://i.postimg.cc/DyrHRBs7/postforbiden-jwt.png)
 
 
 
