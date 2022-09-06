@@ -4,8 +4,11 @@ import IETI.Lab1User.entities.enums.RoleEnum;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.security.crypto.bcrypt.BCrypt;
+import IETI.Lab1User.dto.UserDto;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Document
@@ -20,20 +23,23 @@ public class User{
     private String passwordHash;
     private List<RoleEnum> roles;
 
+
     public User(){
         this.id = String.valueOf((int)(Math.random()*5));
         this.createdAt = LocalDate.now().toString();
+        this.roles = new ArrayList<>();
     }
 
-    public User(String name, String email, String lastName){
+    public User(String name, String email, String lastName, UserDto userdto){
         this();
         this.name = name;
         this.email = email;
         this.lastName = lastName;
+        this.passwordHash = BCrypt.hashpw(userdto.getPassword(), BCrypt.gensalt());
     }
 
-    public User(String id,String name, String email, String lastName, String createdAt){
-        this(name, email, lastName);
+    public User(String id, String name, String email, String lastName,UserDto userdto, String createdAt) {
+        this(name, email, lastName, userdto);
         this.id = id;
         this.createdAt = createdAt;
     }
@@ -95,4 +101,14 @@ public class User{
     public void setRoles(List<RoleEnum> roles) {
         this.roles = roles;
     }
+
+    public void toEntity(UserDto user) {
+        //Previous labs implementation
+        if (user.getPassword() != null) {
+            this.passwordHash = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
+        }
+    }
+
+
+
 }

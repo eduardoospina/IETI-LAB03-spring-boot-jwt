@@ -7,8 +7,8 @@ public class UserDto {
     private String name;
     private String email;
     private String lastName;
-    private String password;
     private String createdAt;
+    private String password;
 
     public UserDto(){
         this.id = String.valueOf((int)(Math.random()*9));
@@ -16,15 +16,16 @@ public class UserDto {
 
     }
 
-    public UserDto(String name, String email, String lastName){
+    public UserDto(String name, String email, String lastName, String password){
         this();
         this.name = name;
         this.email = email;
         this.lastName = lastName;
+        this.password = password;
     }
 
-    public UserDto(String id,String name, String email, String lastName, String createdAt){
-        this(name, email, lastName);
+    public UserDto(String id,String name, String email, String lastName, String createdAt, String passwords){
+        this(name, email, lastName, passwords);
         this.id = id;
         this.createdAt = createdAt;
     }
