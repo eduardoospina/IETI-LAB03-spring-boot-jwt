@@ -86,11 +86,11 @@ public class User{
         this.createdAt = createdAt;
     }
 
-    public String getPassword() {
+    public String getPasswordHash(){
         return passwordHash;
     }
 
-    public void setPassword(String password) {
+    public void setPasswordHash(String password) {
         this.passwordHash = password;
     }
 

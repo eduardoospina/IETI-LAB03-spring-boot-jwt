@@ -10,6 +10,8 @@ public interface UserService
 
     User findById( String id );
 
+    User findByEmail( String email);
+
     List<User> getAll();
 
     void deleteById( String id );
