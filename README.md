@@ -313,10 +313,9 @@ para esto se siguen los siguientes pasos:
 
     17) Verify the authentication endpoint by sending a user's credentials ( Remember that we have to add a password to the body now )
 
-##### Estado Inicial base de datos:
-![]()
 
-##### Pruebas Endpoint: 
+##### Pruebas Endpoint:
+ 
 ![](https://i.postimg.cc/mg81FzdW/insomnia-endpoint-craete-1.png)
 
 ![](https://i.postimg.cc/jj1WMV08/insomnia-endpoint-craete-2.png)
@@ -330,6 +329,7 @@ para esto se siguen los siguientes pasos:
     18) If everything goes well you would have your token object response with it's corresponding expiration date.
 
 ##### generacion Tokens:
+
 ![](https://i.postimg.cc/sDzM69qR/comprobacion-token-1.png)
 
 ![](https://i.postimg.cc/sDJvtGCG/comprobacion-token-2.png)
