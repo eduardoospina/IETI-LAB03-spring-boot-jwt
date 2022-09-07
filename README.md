@@ -316,9 +316,9 @@ para esto se siguen los siguientes pasos:
 
 ##### Pruebas Endpoint:
 
-![](https://i.postimg.cc/jj1WMV08/insomnia-endpoint-craete-2.png)
+![](https://i.postimg.cc/CKdywXBp/insomnia-endpoint-craete-1-0.png)
 
-![](https://i.postimg.cc/mg81FzdW/insomnia-endpoint-craete-1.png)
+![](https://i.postimg.cc/jj1WMV08/insomnia-endpoint-craete-2.png)
 
 ![](https://i.postimg.cc/Sszn5Zmm/insomnia-endpoint-craete-3.png)
 
