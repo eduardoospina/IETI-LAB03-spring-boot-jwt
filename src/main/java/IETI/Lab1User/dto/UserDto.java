@@ -10,13 +10,23 @@ public class UserDto {
     private String createdAt;
     private String password;
 
-    public UserDto(String id, String name, String email, String lastName, String createdAt, String password){
-        this.id = id;
+    public UserDto(){
+        this.id = String.valueOf((int)(Math.random()*5));
+        this.createdAt = LocalDate.now().toString();
+    }
+
+    public UserDto(String name, String email, String lastName, String password){
+        this();
         this.name = name;
-        this.email = email;
         this.lastName = lastName;
-        this.createdAt = createdAt;
+        this.email = email;
         this.password = password;
+    }
+
+    public UserDto(String id,String name, String email, String lastName, String createdAt, String password){
+        this(name, email, lastName, password);
+        this.id = id;
+        this.createdAt = createdAt;
     }
 
 

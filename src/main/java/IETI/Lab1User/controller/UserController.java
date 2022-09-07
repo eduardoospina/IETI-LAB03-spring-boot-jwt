@@ -52,7 +52,8 @@ public class UserController {
     @PostMapping
     public ResponseEntity<UserDto> create(@RequestBody UserDto userDto ) {
         try {
-            userService.create(mapeo.map(userDto, User.class));
+            User mapeouser = new User(userDto);
+            userService.create(mapeouser);
             return new ResponseEntity<>(userDto, HttpStatus.ACCEPTED);
         } catch (Exception e) {
             e.printStackTrace();

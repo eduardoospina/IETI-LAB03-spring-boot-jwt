@@ -27,19 +27,27 @@ public class User{
     public User(){
         this.id = String.valueOf((int)(Math.random()*5));
         this.createdAt = LocalDate.now().toString();
-        this.roles = new ArrayList<>();
     }
 
-    public User(String name, String email, String lastName, UserDto userdto){
+    public User(UserDto dto) {
+        this.id = dto.getId();
+        this.name = dto.getName();
+        this.email = dto.getEmail();
+        this.lastName = dto.getLastName();
+        this.createdAt = dto.getCreatedAt();
+        this.passwordHash = BCrypt.hashpw(dto.getPassword(), BCrypt.gensalt());
+        roles = new ArrayList<>();
+    }
+
+    public User(String name, String email, String lastName){
         this();
         this.name = name;
         this.email = email;
         this.lastName = lastName;
-        this.passwordHash = BCrypt.hashpw(userdto.getPassword(), BCrypt.gensalt());
     }
 
-    public User(String id, String name, String email, String lastName,UserDto userdto, String createdAt) {
-        this(name, email, lastName, userdto);
+    public User(String id, String name, String email, String lastName, String createdAt) {
+        this(name, email, lastName);
         this.id = id;
         this.createdAt = createdAt;
     }
