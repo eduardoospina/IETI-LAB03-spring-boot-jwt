@@ -317,22 +317,24 @@ para esto se siguen los siguientes pasos:
 ![]()
 
 ##### Pruebas Endpoint: 
-![]()
+![](https://i.postimg.cc/mg81FzdW/insomnia-endpoint-craete-1.png)
 
-![]()
+![](https://i.postimg.cc/jj1WMV08/insomnia-endpoint-craete-2.png)
 
-![]()
+![](https://i.postimg.cc/Sszn5Zmm/insomnia-endpoint-craete-3.png)
 
-![]()
+![](https://i.postimg.cc/T1MKXrPg/insomnia-endpoint-craete-4.png)
+
+![](https://i.postimg.cc/v8f1tSPz/insomnia-endpoint-craete-5.png)
 
     18) If everything goes well you would have your token object response with it's corresponding expiration date.
 
 ##### generacion Tokens:
-![]()
+![](https://i.postimg.cc/sDzM69qR/comprobacion-token-1.png)
 
-![]()
+![](https://i.postimg.cc/sDJvtGCG/comprobacion-token-2.png)
 
-![]()
+
 
 
 
