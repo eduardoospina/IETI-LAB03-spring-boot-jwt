@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.modelmapper.ModelMapper;
 
+import javax.annotation.security.RolesAllowed;
+
 
 @RestController
 @RequestMapping( "/api/user" )
@@ -73,6 +75,7 @@ public class UserController {
     }
 
     @DeleteMapping( "/{id}" )
+    @RolesAllowed("ADMIN")
     public ResponseEntity<Boolean> delete( @PathVariable String id ) {
         try {
             userService.deleteById(id);
